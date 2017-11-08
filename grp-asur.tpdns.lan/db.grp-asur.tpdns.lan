@@ -1,0 +1,21 @@
+; ZONE : domain.tld
+; ------------------------------------------------------------------
+$TTL 7200
+
+@       IN      SOA    ns1.grp-asur.tpdns.lan. hostmaster.grp-asur.tpdns.lan. (
+                                        2014102001 ; Serial
+                                        14400      ; Refresh
+                                        3600       ; Retry
+                                        1209600    ; Expire - 1 week
+                                        86400 )    ; Minimum
+
+; NAMESERVERS
+
+@                   IN                NS                   ns1.grp-asur.tpdns.lan.
+
+; A/AAA
+
+@	IN	A	172.17.0.2
+ns1	IN	A	172.17.0.2
+@	IN	A	10.203.4.1
+pc1	IN	A	10.203.4.1

@@ -1,0 +1,12 @@
+zone "grp-asur.tpdns.lan" {
+
+        # Zone de type maître
+        type master;
+
+        file "/etc/bind/grp-asur.tpdns.lan/db.grp-asur.tpdns.lan";
+
+
+        allow-query { any; };
+
+        notify yes;
+};
